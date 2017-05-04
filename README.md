@@ -1,4 +1,4 @@
 # StudyDemo
 学习分享代码
 
-该代码都为Android Studio下的Module项目。
+所有的项目代码都为Android Studio下的Module项目。
