@@ -6,5 +6,4 @@ package com.mvpdemo.model;
 
 public interface ICallBack {
     void result(String s);
-
 }

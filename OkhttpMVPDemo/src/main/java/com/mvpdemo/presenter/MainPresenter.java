@@ -11,10 +11,11 @@ import com.mvpdemo.view.MainView;
 import java.util.Map;
 
 /**
+ * 方法操作层
  * Created by D&LL on 2017/3/13.
  */
 
-public class MainPresenter {//方法操作层
+public class MainPresenter {
 
     private Model model = Model.getInstance();
     private MainView mainView;

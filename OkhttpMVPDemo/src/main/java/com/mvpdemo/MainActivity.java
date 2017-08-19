@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity implements MainView {
 
     @OnClick(R.id.button)
     public void onClick() {
-        presenter.downFile("http://images.csdn.net/20150817/1.jpg", "demo.jpg");
+        presenter.downFile("http://omuzv9mvf.bkt.clouddn.com/Fade.mp3", "Fade.mp3");
     }
 
     @Override

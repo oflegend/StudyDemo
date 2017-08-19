@@ -26,7 +26,7 @@ public class GetPostUrl {
     /**
      * 发送get请求
      *
-     * @param url
+     * @param url url
      * @return
      */
     public static String get(final String url) {
@@ -35,12 +35,13 @@ public class GetPostUrl {
             @Override
             public String call() throws Exception {
                 BufferedReader br = null;
+                InputStreamReader isr = null;
                 URLConnection conn;
                 try {
                     URL geturl = new URL(url);
                     conn = geturl.openConnection();
                     conn.connect();
-                    InputStreamReader isr = new InputStreamReader(conn.getInputStream());
+                    isr = new InputStreamReader(conn.getInputStream());
                     br = new BufferedReader(isr);
                     String line = null;
                     while ((line = br.readLine()) != null) {
@@ -50,13 +51,17 @@ public class GetPostUrl {
                 } catch (Exception e) {
                     e.printStackTrace();
                 } finally {
-                    if (br != null) {
-                        try {
+                    try {
+                        if (br != null) {
                             br.close();
-                        } catch (IOException e) {
-                            e.printStackTrace();
                         }
+                        if (isr != null) {
+                            isr.close();
+                        }
+                    } catch (IOException e) {
+                        e.printStackTrace();
                     }
+
                 }
                 return sb.toString();
             }
@@ -71,6 +76,13 @@ public class GetPostUrl {
         return s;
     }
 
+    /**
+     * POST请求
+     *
+     * @param url url
+     * @param map 请求参数的map集合形式
+     * @return
+     */
     public static String post(final String url, final Map<String, String> map) {
         final StringBuilder sb = new StringBuilder();
         FutureTask<String> task = new FutureTask<String>(new Callable<String>() {
@@ -84,8 +96,6 @@ public class GetPostUrl {
                     conn = posturl.openConnection();
                     conn.setDoInput(true);
                     conn.setDoOutput(true);
-                    conn.connect();
-
                     out = new DataOutputStream(conn
                             .getOutputStream());
                     StringBuilder request = new StringBuilder();

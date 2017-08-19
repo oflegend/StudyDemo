@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle/gradle-3.4.1" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/ActivityLifecycle" />
+            <option value="$PROJECT_DIR$/AliPayDemo" />
+            <option value="$PROJECT_DIR$/AndroidNet" />
+            <option value="$PROJECT_DIR$/AsynTaskDemo" />
+            <option value="$PROJECT_DIR$/BindService" />
+            <option value="$PROJECT_DIR$/BroadcastReceiver" />
+            <option value="$PROJECT_DIR$/DBHelperDemo" />
+            <option value="$PROJECT_DIR$/DataTest" />
+            <option value="$PROJECT_DIR$/Fragment" />
+            <option value="$PROJECT_DIR$/FragmentLifecycle" />
+            <option value="$PROJECT_DIR$/FragmentTest" />
+            <option value="$PROJECT_DIR$/GreenDao" />
+            <option value="$PROJECT_DIR$/Handler" />
+            <option value="$PROJECT_DIR$/HttpClient" />
+            <option value="$PROJECT_DIR$/ImgViewPager" />
+            <option value="$PROJECT_DIR$/LoadModel" />
+            <option value="$PROJECT_DIR$/MyFragment" />
+            <option value="$PROJECT_DIR$/OkhttpMVPDemo" />
+            <option value="$PROJECT_DIR$/RecycleViewDemo" />
+            <option value="$PROJECT_DIR$/SQLiteDemo" />
+            <option value="$PROJECT_DIR$/SaveDemo" />
+            <option value="$PROJECT_DIR$/ScreenshotsDemo" />
+            <option value="$PROJECT_DIR$/ShareDemo" />
+            <option value="$PROJECT_DIR$/TestProvider" />
+            <option value="$PROJECT_DIR$/WebView" />
+            <option value="$PROJECT_DIR$/YaXunLogin" />
+            <option value="$PROJECT_DIR$/ZxingCode" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

@@ -12,6 +12,8 @@ import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Map;
+import java.util.concurrent.Callable;
+import java.util.concurrent.FutureTask;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -38,6 +40,29 @@ public class Model {
 
 
     public OkHttpClient client = OkHttp3.getClient();
+
+    /**
+     * 创建新线程实现同步get请求
+     *
+     * @param context
+     * @param url
+     * @return
+     * @throws Exception
+     */
+
+    public String getSysn(final Context context, final String url) throws Exception {
+        FutureTask<String> task = new FutureTask<String>(new Callable<String>() {
+            @Override
+            public String call() throws Exception {
+                Request request = new Request.Builder().url(url).build();
+                Response response = client.newCall(request).execute();
+                String result = response.body().string();
+                return result;
+            }
+        });
+        new Thread(task).start();
+        return task.get();
+    }
 
     /**
      * 异步get请求
@@ -94,6 +119,7 @@ public class Model {
             @Override
             public void onResponse(Call call, Response response) throws IOException {
                 if (response.isSuccessful()) {
+                    System.out.println(response.code() + "~~~~~~~~");
                     callback.result(response.body().string());
                 } else {
                     callback.result("请求失败！");
@@ -111,7 +137,6 @@ public class Model {
      * @param callback
      */
     public void postJson(final Context context, String url, String content, final ICallBack callback) {
-
         RequestBody requestBody = RequestBody.create(
                 MediaType.parse("application/json"), content);
         Request request = new Request.Builder()
@@ -190,10 +215,9 @@ public class Model {
                 } else {
                     System.out.println("下载失败！");
                 }
-                response.close();
+                response.close();//下载文件耗时较久，完成后需要手动关闭请求
                 dialog.dismiss();
             }
         });
-
     }
 }
