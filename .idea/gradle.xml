@@ -9,7 +9,6 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/ActivityLifecycle" />
             <option value="$PROJECT_DIR$/AliPayDemo" />
             <option value="$PROJECT_DIR$/AndroidNet" />
             <option value="$PROJECT_DIR$/AsynTaskDemo" />
@@ -17,6 +16,7 @@
             <option value="$PROJECT_DIR$/BroadcastReceiver" />
             <option value="$PROJECT_DIR$/DBHelperDemo" />
             <option value="$PROJECT_DIR$/DataTest" />
+            <option value="$PROJECT_DIR$/FinishActivity" />
             <option value="$PROJECT_DIR$/Fragment" />
             <option value="$PROJECT_DIR$/FragmentLifecycle" />
             <option value="$PROJECT_DIR$/FragmentTest" />
@@ -34,7 +34,6 @@
             <option value="$PROJECT_DIR$/ShareDemo" />
             <option value="$PROJECT_DIR$/TestProvider" />
             <option value="$PROJECT_DIR$/WebView" />
-            <option value="$PROJECT_DIR$/YaXunLogin" />
             <option value="$PROJECT_DIR$/ZxingCode" />
           </set>
         </option>

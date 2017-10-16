@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ActivityLifecycle/ActivityLifecycle.iml" filepath="$PROJECT_DIR$/ActivityLifecycle/ActivityLifecycle.iml" />
       <module fileurl="file://$PROJECT_DIR$/AliPayDemo/AliPayDemo.iml" filepath="$PROJECT_DIR$/AliPayDemo/AliPayDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/AndroidNet/AndroidNet.iml" filepath="$PROJECT_DIR$/AndroidNet/AndroidNet.iml" />
       <module fileurl="file://$PROJECT_DIR$/AsynTaskDemo/AsynTaskDemo.iml" filepath="$PROJECT_DIR$/AsynTaskDemo/AsynTaskDemo.iml" />
@@ -10,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/BroadcastReceiver/BroadcastReceiver.iml" filepath="$PROJECT_DIR$/BroadcastReceiver/BroadcastReceiver.iml" />
       <module fileurl="file://$PROJECT_DIR$/DBHelperDemo/DBHelperDemo.iml" filepath="$PROJECT_DIR$/DBHelperDemo/DBHelperDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/DataTest/DataTest.iml" filepath="$PROJECT_DIR$/DataTest/DataTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FinishActivity/FinishActivity.iml" filepath="$PROJECT_DIR$/FinishActivity/FinishActivity.iml" />
       <module fileurl="file://$PROJECT_DIR$/Fragment/Fragment.iml" filepath="$PROJECT_DIR$/Fragment/Fragment.iml" />
       <module fileurl="file://$PROJECT_DIR$/FragmentLifecycle/FragmentLifecycle.iml" filepath="$PROJECT_DIR$/FragmentLifecycle/FragmentLifecycle.iml" />
       <module fileurl="file://$PROJECT_DIR$/FragmentTest/FragmentTest.iml" filepath="$PROJECT_DIR$/FragmentTest/FragmentTest.iml" />
@@ -28,7 +28,6 @@
       <module fileurl="file://$PROJECT_DIR$/StudyDemo.iml" filepath="$PROJECT_DIR$/StudyDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/TestProvider/TestProvider.iml" filepath="$PROJECT_DIR$/TestProvider/TestProvider.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebView/WebView.iml" filepath="$PROJECT_DIR$/WebView/WebView.iml" />
-      <module fileurl="file://$PROJECT_DIR$/YaXunLogin/YaXunLogin.iml" filepath="$PROJECT_DIR$/YaXunLogin/YaXunLogin.iml" />
       <module fileurl="file://$PROJECT_DIR$/ZxingCode/ZxingCode.iml" filepath="$PROJECT_DIR$/ZxingCode/ZxingCode.iml" />
     </modules>
   </component>
